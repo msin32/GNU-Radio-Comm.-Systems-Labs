@@ -1,0 +1,29 @@
+id: power
+label: Power
+category: ECE 440
+
+parameters: []
+
+inputs:
+-   label: in
+    dtype: float
+    vlen: 1
+
+outputs:
+-   label: out
+    dtype: float
+    vlen: 1
+
+templates:
+    imports: 'from power import power  # grc-generated hier_block'
+    make: power()
+    callbacks: []
+
+documentation: 'Erik and Mohsin
+
+    A block for calculating average power of a signal.
+
+    /home/shay/a/ekocinar/ECE440/Exp1/power.py'
+grc_source: /home/shay/a/ekocinar/ECE440/Exp1/power.grc
+
+file_format: 1
